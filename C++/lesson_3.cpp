@@ -27,3 +27,15 @@ std::cout<<score<<"\n";
 // C++ git:(main) ✗ g++ lesson_3.cpp -o score
 // ➜  C++ git:(main) ✗ ./score                  
 // 122166
+
+//Chaining
+int main() {
+  
+  int score = 0;
+  
+  // Output
+  std::cout << "Player score: " << score << "\n";
+}
+// $ g++ game.cpp
+// $ ./a.out
+// Player score: 0

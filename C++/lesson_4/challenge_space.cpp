@@ -21,6 +21,7 @@ int main () {
 
     double weight;
     int planetNumber;
+    std::string planet;
 
     std::cout << "What is your earth weight?\n";
     std::cin >> weight;
@@ -28,19 +29,53 @@ int main () {
     std::cout << "Enter a number for the planet you want to fight on\n" << "1 - Mercury, 2 - Venus, 3 - Mars, 4 - Jupiter\n" << "5 - Saturn, 6 - Uranus, 7 - Neptune\n";
     std::cin >> planetNumber;
     
-if (planetNumber == 1 || planetNumber == 3) {
-    weight = weight * 0.38;
-} else if ( planetNumber == 2) {
-    weight = weight * 0.91;
-} else if (planetNumber == 4) {
-    weight = weight * 2.34;
-} else if (planetNumber == 5) {
-    weight = weight * 1.06;
-} else if (planetNumber == 6) {
-    weight = weight * .92;
-} else if (planetNumber == 7) {
-    weight = weight * 1.19;
-};
-    std::cout << "Your weight is " << weight << "\n";
+// if (planetNumber == 1 || planetNumber == 3) {
+//     weight = weight * 0.38;
+// } else if ( planetNumber == 2) {
+//     weight = weight * 0.91;
+// } else if (planetNumber == 4) {
+//     weight = weight * 2.34;
+// } else if (planetNumber == 5) {
+//     weight = weight * 1.06;
+// } else if (planetNumber == 6) {
+//     weight = weight * .92;
+// } else if (planetNumber == 7) {
+//     weight = weight * 1.19;
+// };
+
+ switch (planetNumber)
+    {
+    case 1 :
+        weight = weight * 0.38;
+        planet = "Mercury";
+        break;
+    case 2 :
+        weight = weight * 0.91;
+        planet = "Venus";
+        break;
+    case 3 :
+        weight = weight * 0.38;
+        planet = "Mars";
+        break;
+    case 4 :
+        weight = weight * 2.34;
+        planet = "Jupiter";
+        break;
+    case 5 :
+        weight = weight * 1.06;
+        planet = "Saturn";
+        break;
+    case 6 :
+        weight = weight * 0.92;
+        planet = "Uranus";
+        break;
+    case 7 :
+        weight = weight * 1.19;
+        planet = "Neptune";
+        break;
+    default:
+        break;
+    }
+    std::cout << "Your weight on " << planet << " is: " << weight << "\n";
 
 }

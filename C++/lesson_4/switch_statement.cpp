@@ -29,7 +29,7 @@ int main() {
     case 8 :
       std::cout << "Wartortle";
     case 9 : 
-      std::cout << "Blastoise";
+      std::cout << "Blastgitoise";
     default :
       std::cout << "Unknown\n";
       break;

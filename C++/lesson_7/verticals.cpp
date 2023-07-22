@@ -16,12 +16,13 @@ int main() {
   std::cout << last_jedi[0] << " ";
   std::cout << last_jedi[1] << " ";
   std::cout << last_jedi[2] << " ";
-  std::cout << last_jedi[3] << " ";
+  std::cout << last_jedi[3] << " \n";
 
   last_jedi.pop_back();
-  // std::cout << last_jedi[3] << " ";
   for (const std::string& jedi : last_jedi) {
     std::cout << jedi << " ";
   }
+
+  std::cout << last_jedi.size() << "\n";
 
 }
